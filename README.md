@@ -1,110 +1,113 @@
-🏨 Kırklareli Otel Yönetim Sistemi (Hotel Management System)
-Bu proje, Java ve JavaFX kullanılarak geliştirilmiş, Nesne Yönelimli Programlama (OOP) prensiplerine ve Yazılım Tasarım Desenlerine (Design Patterns) sadık kalınarak mimarisi oluşturulmuş kapsamlı bir otel rezervasyon ve yönetim sistemidir.
+# 🏨 Kırklareli Otel Yönetim Sistemi (Hotel Management System)
 
-✨ Özellikler
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-21-red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/JavaFX-GUI-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/OOP-Clean%20Code-success?style=for-the-badge"/>
+</p>
 
-👤 Müşteri Paneli
-Modern Arayüz: Kullanıcı dostu, kart yapılı ve responsive tasarım.
+---
 
-Oda Arama: Tarih aralığı, kişi sayısı ve oda tipine göre filtreleme.
+## 📌 Proje Tanımı: Akademik ve Sektörel Nitelik
 
-Profil Yönetimi: Kişisel bilgileri güncelleme, avatar sistemi ve şifre değiştirme.
+**Kırklareli Otel Yönetim Sistemi**, Java ve JavaFX kullanılarak geliştirilmiş, kapsamlı bir **otel rezervasyon ve yönetim otomasyonudur**.
 
-Rezervasyon: Seçilen odayı rezerve etme ve geçmiş rezervasyonları görüntüleme.
+Bu proje, sadece çalışan bir masaüstü uygulamasının ötesinde; **Nesne Yönelimli Programlama (OOP)** prensiplerine, **Clean Code** yaklaşımına ve **Yazılım Tasarım Desenlerine** sadık kalınarak mimarisi oluşturulmuş, **akademik ve sektörel nitelikte** bir yazılım örneğidir. Proje, **katmanlı mimari**, **modüler yapı** ve **tasarım desenlerinin gerçek senaryolar üzerinden uygulanışını** başarıyla göstermektedir.
 
-Dinamik Renkler: İsim baş harfine göre otomatik avatar rengi oluşturma.
+---
 
-🛠 Yönetim (Personel) Paneli
-Dashboard: Otelin anlık doluluk oranlarını ve durumunu izleme.
+## 🏗 Mimari, Teknolojiler ve Tasarım Desenleri
 
-Oda Yönetimi:
+Proje, **genişletilebilir, bakımı kolay ve test edilebilir** bir yapı sağlamak amacıyla katmanlı mimari yaklaşımını temel alır.
 
-Oda Ekleme / Silme / Güncelleme.
+### 🔧 Kullanılan Teknolojiler
 
-Check-In (Giriş) ve Check-Out (Çıkış) işlemleri.
+| Alan | Teknoloji | Açıklama |
+| :--- | :--- | :--- |
+| **Programlama Dili** | Java 21+ | Projenin temel dili. |
+| **Arayüz (GUI)** | JavaFX | FXML kullanılmadan, **saf Java kodu ile dinamik arayüz** geliştirme. |
+| **Veritabanı** | MySQL | Güçlü ve ilişkisel veri depolama çözümü. |
+| **Stil** | JavaFX CSS | Modern ve tutarlı kullanıcı deneyimi için stil yönetimi. |
+| **IDE** | IntelliJ IDEA | Tercih edilen geliştirme ortamı. |
 
-Odaların anlık durumunu (Müsait, Dolu, Rezerve) renkli kartlarla görme.
+---
 
-Müşteri Yönetimi: Kayıtlı tüm müşterileri listeleme, filtreleme ve detaylarını görme.
+### 📐 Kullanılan Tasarım Desenleri (Design Patterns)
 
-Rezervasyon Takibi:
+| Tasarım Deseni | Kullanım Amacı |
+| :--- | :--- |
+| **Singleton** | `DatabaseConnection` sınıfı ile **veritabanı bağlantısının uygulama boyunca tekil** olarak yönetilmesi (Kaynak optimizasyonu). |
+| **Factory Method** | `RoomFactory` ile farklı oda tiplerinin (**Standart, Suit, Kral**) **esnek ve dinamik** bir şekilde üretilmesi. |
+| **State** | Odaların durumlarının (`Available`, `Occupied`, `Reserved`) nesne bazlı yönetilmesi ve **davranışların duruma göre otomatik değişmesi**. |
+| **Facade** | Karmaşık alt sistem işlemlerinin (Rezervasyon, loglama, durum güncelleme) `HotelFacade` altında toplanarak **arayüz katmanından soyutlanması**. |
+| **Observer** | Veri veya durum değişimlerinde (Örn: Oda Durumu) **arayüz bileşenlerinin (UI) otomatik ve anlık güncellenmesi**. |
 
-Ödeme durumu takibi (Bekliyor / Ödendi).
+---
 
-Rezervasyon iptali veya onaylanması.
+## ✨ Sistem Özelliklerine Derinlemesine Bakış
 
-Renkli durum çubukları ile görsel takip.
+### 👤 Müşteri Paneli
+* **Modern ve Kullanıcı Dostu Arayüz:** Kart tabanlı, sade ve okunabilir tasarım anlayışı.
+* **Akıllı Oda Arama:** Tarih aralığı, kişi sayısı ve oda tipine göre filtreleme yaparak yalnızca **müsait odaların** listelenmesi.
+* **Rezervasyon Yönetimi:** Seçilen odanın rezerve edilmesi ve geçmiş/aktif rezervasyonların görüntülenmesi.
+* **Profil Yönetimi:** Kişisel bilgilerin güncellenmesi ve şifre değiştirme.
+* **Dinamik Avatar Sistemi:** Kullanıcı adının ilk harfine göre **otomatik renk üreten** görsel avatar yapısı.
 
-Hızlı Aksiyonlar: Müşteri adına resepsiyondan rezervasyon oluşturma.
+---
 
-🏗 Mimari ve Kullanılan Teknolojiler
-Bu proje, sadece çalışan bir uygulama değil, aynı zamanda temiz kod (clean code) prensiplerine uygun bir mimari örneğidir.
+### 🛠 Yönetim (Personel) Paneli
+* **Dashboard (Kontrol Paneli):** Otelin anlık doluluk durumu ve genel durum takibi.
+* **Oda Yönetimi:**
+    * Oda ekleme, silme ve güncelleme işlemleri.
+    * **Check-In (Giriş) & Check-Out (Çıkış) işlemleri.**
+    * Odaların durumlarını (**Müsait / Dolu / Rezerve**) **renkli kartlar ile görsel takip**.
+* **Müşteri Yönetimi:** Tüm kayıtlı müşterilerin listelenmesi, filtrelenmesi ve detay görüntüleme.
+* **Rezervasyon Takibi:**
+    * Ödeme durumu kontrolü (**Bekliyor / Ödendi**).
+    * Rezervasyon onaylama veya iptal işlemleri.
+    * Görsel durum çubukları ile hızlı takip.
+* **Hızlı Aksiyonlar:** Resepsiyon tarafından müşteri adına doğrudan rezervasyon oluşturabilme yeteneği.
 
-🔧 Teknolojiler
-Dil: Java 21
+---
 
-Arayüz: JavaFX (FXML kullanılmadan, Saf Java kodu ile dinamik UI)
+## 🎯 Proje Kazanımları
 
-Veritabanı: MySQL
+Bu projeyi geliştirerek ve bu projede yer alarak, ekip aşağıdaki kritik konularda pratik deneyim kazanmıştır:
 
-Stil: CSS (JavaFX CSS Styling)
+* **Katmanlı Mimari:** MVC yapılarının ve katmanlı mimarinin gerçek bir projede uygulanması.
+* **Tasarım Desenleri:** Singleton, Factory, State, Facade ve Observer desenlerinin senaryo bazlı, amaca yönelik kullanımı.
+* **Modern GUI Geliştirme:** JavaFX ile FXML kullanmadan, saf Java kodu üzerinden modern ve dinamik masaüstü arayüz geliştirme.
+* **Veritabanı Entegrasyonu:** MySQL ile ilişkisel veritabanı entegrasyonu ve JDBC kullanımı.
+* **Sürdürülebilirlik:** Temiz kod (Clean Code) prensipleri ile sürdürülebilir yazılım geliştirme yaklaşımları.
 
-📐 Tasarım Desenleri (Design Patterns)
-Projede aşağıdaki desenler aktif olarak kullanılmıştır:
+---
 
-Singleton Pattern: Veritabanı bağlantısı (DatabaseConnection) için kullanıldı. Uygulama boyunca tek bir bağlantı nesnesi üzerinden işlem yapılarak kaynak yönetimi sağlandı.
+## 🚀 Kurulum ve Çalıştırma
 
-Factory Method Pattern: RoomFactory sınıfı ile farklı tipteki odaların (Kral, Standart, Suit vb.) üretimi dinamik hale getirildi.
+Projeyi yerel makinenizde hızlıca çalıştırmak için adımları izleyin:
 
-State Pattern: Odaların durumları (Available, Occupied, Reserved) birer sınıf olarak tasarlandı. Odanın davranışları (rezervasyon yapma, giriş yapma) bulunduğu duruma göre değişmektedir.
+1.  **Projeyi Klonlayın:**
+    ```bash
+    git clone [GitHub Adresiniz Buraya Gelecek]
+    ```
+2.  **Veritabanını Yapılandırın:**
+    * MySQL sunucunuzda **`otel_db`** adında bir veritabanı oluşturun.
+    * Proje dizinindeki **`database.sql`** dosyasını bu veritabanına import edin.
+3.  **Veritabanı Bağlantı Ayarları:**
+    * Aşağıdaki dosyadan kendi veritabanı kullanıcı adı ve şifrenizi girin:
+        ```text
+        src/com/otel/db/DatabaseConnection.java
+        ```
+4.  **Uygulamayı Başlatın:**
+    * IntelliJ IDEA'da projeyi açın ve ana sınıf olan `LoginApp.java` dosyasını çalıştırın.
 
-Facade Pattern: Karmaşık alt sistem işlemleri (Rezervasyon oluşturma, Loglama, Oda durumu güncelleme) HotelFacade sınıfı arkasında toplanarak arayüz katmanından soyutlandı.
+---
 
-Observer Pattern: Olay yönetimi ve veri takibi için kullanıldı. Bir odanın durumu değiştiğinde veya veritabanında bir güncelleme olduğunda, ilgili arayüz bileşenlerinin (UI) bu değişikliği algılayıp kendini otomatik olarak güncellemesi (Event Listeners & Bindings) bu desen sayesinde sağlandı.
+## 👨‍💻 Geliştirici Ekibi
 
-🚀 Kurulum ve Çalıştırma
-Projeyi yerel makinenizde çalıştırmak için adımları izleyin:
-
-Projeyi Klonlayın
-
-Veritabanını İçe Aktarın:
-
-MySQL'de otel_db adında bir veritabanı oluşturun.
-
-Proje dizinindeki database.sql dosyasını bu veritabanına import edin.
-
-Bağlantı Ayarları:
-
-src/com/otel/db/DatabaseConnection.java dosyasını açın.
-
-Kendi veritabanı kullanıcı adı ve şifrenizi girin
-
-📚 Gerekli Kütüphaneler ve İndirme Linkleri
-
-Projeyi hatasız çalıştırabilmek için aşağıdaki harici kütüphaneleri indirip IDE'nize (Project Structure > Libraries) eklemeniz gerekmektedir:
-
-1.  *JavaFX SDK (Sürüm 21 veya üzeri):*
-    * 📥 [İndirmek için tıklayın (GluonHQ)](https://gluonhq.com/products/javafx/)
-    * Not: İşletim sisteminize uygun olan **"SDK"* sürümünü indirin.*
-
-2.  *MySQL Connector/J (JDBC Sürücüsü):*
-    * 📥 [İndirmek için tıklayın (MySQL Resmi Sitesi)](https://dev.mysql.com/downloads/connector/j/)
-    * Not: Listeden **"Platform Independent"* seçeneğini seçin ve ZIP dosyasını indirin. İçinden çıkan .jar uzantılı dosyayı kullanacaksınız.*
-
-Çalıştırın:
-
-LoginApp.java dosyasını çalıştırarak uygulamayı başlatın.
-
-📝 Lisans
-Bu proje eğitim amaçlı geliştirilmiştir. Kaynak gösterilerek kullanılabilir ve geliştirilebilir.
-
-👨‍💻 İletişim
-
-Geliştiriciler: 
-
-[**Murat  Aydoğan**](https://github.com/murataydogan) LinkedIn: [https://www.linkedin.com/in/murat-aydo%C4%9Fan-51587b298/] 
-
-[**Kerem Yıldız**](https://github.com/KLU1230505031) LinkedIn: [https://www.linkedin.com/in/kerem-y%C4%B1ld%C4%B1z-ba4bb1362/] 
-
-[**Ömer Abalı**](https://github.com/omerabali) LinkedIn: [https://www.linkedin.com/in/omerabali/] 
-                
+| Geliştirici | Bağlantı (LinkedIn) |
+| :--- | :--- |
+| **Murat Aydoğan** | 🔗 https://www.linkedin.com/in/murat-aydo%C4%9Fan-51587b298/ |
+| **Kerem Yıldız** | 🔗 https://www.linkedin.com/in/murat-aydo%C4%9Fan-51587b298/ |
+| **Ömer Abalı** | 🔗 https://www.linkedin.com/in/omerabali/ |
