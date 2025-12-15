@@ -108,6 +108,8 @@ Projeyi yerel makinenizde hızlıca çalıştırmak için adımları izleyin:
 
 | Geliştirici | Bağlantı (LinkedIn) |
 | :--- | :--- |
-| **Murat Aydoğan** | 🔗 https://www.linkedin.com/in/murat-aydo%C4%9Fan-51587b298/ |
-| **Kerem Yıldız** | 🔗 https://www.linkedin.com/in/murat-aydo%C4%9Fan-51587b298/ |
-| **Ömer Abalı** | 🔗 https://www.linkedin.com/in/omerabali/ |
+| [**Murat Aydoğan**](https://github.com/murataydogan) | 🔗 https://www.linkedin.com/in/murat-aydo%C4%9Fan-51587b298/ |
+| [**Kerem Yıldız**](https://github.com/KLU1230505031) | 🔗 https://www.linkedin.com/in/murat-aydo%C4%9Fan-51587b298/ |
+| [**Ömer Abalı**](https://github.com/omerabali)| 🔗 https://www.linkedin.com/in/omerabali/ |
+
+
