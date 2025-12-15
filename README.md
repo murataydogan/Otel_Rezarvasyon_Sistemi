@@ -42,6 +42,7 @@ Proje, **genişletilebilir, bakımı kolay ve test edilebilir** bir yapı sağla
 | **State** | Odaların durumlarının (`Available`, `Occupied`, `Reserved`) nesne bazlı yönetilmesi ve **davranışların duruma göre otomatik değişmesi**. |
 | **Facade** | Karmaşık alt sistem işlemlerinin (Rezervasyon, loglama, durum güncelleme) `HotelFacade` altında toplanarak **arayüz katmanından soyutlanması**. |
 | **Observer** | Veri veya durum değişimlerinde (Örn: Oda Durumu) **arayüz bileşenlerinin (UI) otomatik ve anlık güncellenmesi**. |
+| **Builder**| `ReservationTicket` gibi **çok sayıda parametre alan karmaşık nesneleri** oluştururken, okunabilirliği artırmak ve **parametrik sıralamadan kaynaklanan hataları önlemek**. |
 
 ---
 
@@ -76,7 +77,7 @@ Proje, **genişletilebilir, bakımı kolay ve test edilebilir** bir yapı sağla
 Bu projeyi geliştirerek ve bu projede yer alarak, ekip aşağıdaki kritik konularda pratik deneyim kazanmıştır:
 
 * **Katmanlı Mimari:** MVC yapılarının ve katmanlı mimarinin gerçek bir projede uygulanması.
-* **Tasarım Desenleri:** Singleton, Factory, State, Facade ve Observer desenlerinin senaryo bazlı, amaca yönelik kullanımı.
+* **Tasarım Desenleri:** Singleton, Factory, State, Facade, Observer ve **Builder** desenlerinin senaryo bazlı, amaca yönelik kullanımı.
 * **Modern GUI Geliştirme:** JavaFX ile FXML kullanmadan, saf Java kodu üzerinden modern ve dinamik masaüstü arayüz geliştirme.
 * **Veritabanı Entegrasyonu:** MySQL ile ilişkisel veritabanı entegrasyonu ve JDBC kullanımı.
 * **Sürdürülebilirlik:** Temiz kod (Clean Code) prensipleri ile sürdürülebilir yazılım geliştirme yaklaşımları.
@@ -108,8 +109,8 @@ Projeyi yerel makinenizde hızlıca çalıştırmak için adımları izleyin:
 
 | Geliştirici | Bağlantı (LinkedIn) |
 | :--- | :--- |
-| [**Murat Aydoğan**](https://github.com/murataydogan) | 🔗 https://www.linkedin.com/in/murat-aydo%C4%9Fan-51587b298/ |
-| [**Kerem Yıldız**](https://github.com/KLU1230505031) | 🔗 https://www.linkedin.com/in/murat-aydo%C4%9Fan-51587b298/ |
-| [**Ömer Abalı**](https://github.com/omerabali)| 🔗 https://www.linkedin.com/in/omerabali/ |
+| **Murat Aydoğan** | 🔗 https://www.linkedin.com/in/murat-aydo%C4%9Fan-51587b298/ |
+| **Kerem Yıldız** | 🔗 https://www.linkedin.com/in/murat-aydo%C4%9Fan-51587b298/ |
+| **Ömer Abalı** | 🔗 https://www.linkedin.com/in/omerabali/ |
 
-
+---
